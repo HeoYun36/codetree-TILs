@@ -13,4 +13,4 @@ for num in numbers2:
 
 avg = sum_of_numbers2 / len(numbers2)
 
-print(f'{sum_of_numbers2} {avg}')
+print(f'{sum_of_numbers2} {avg:.1f}')
