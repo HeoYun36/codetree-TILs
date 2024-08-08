@@ -11,6 +11,8 @@ for _ in range(n):
     a, b, c = input().split()
     infos.append(info(a, b, c))
 
-print(f"name {infos[n - 1].name}")
-print(f"addr {infos[n - 1].address}")
-print(f"city {infos[n - 1].region}")
+infos.sort(key= lambda x: x.name)
+
+print(f"name {infos[-1].name}")
+print(f"addr {infos[-1].address}")
+print(f"city {infos[-1].region}")
