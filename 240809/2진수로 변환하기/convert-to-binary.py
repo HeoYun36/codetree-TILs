@@ -1,5 +1,8 @@
 n = int(input())
 
+if n == 0:
+    print(0)
+
 digits = [0 for i in range(100)]
 idx = 0
 
