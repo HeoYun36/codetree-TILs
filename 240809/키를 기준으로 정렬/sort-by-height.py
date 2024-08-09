@@ -7,7 +7,7 @@ class info:
 n = int(input())
 
 infos = []
-for _ in range(5):
+for _ in range(n):
     a, b, c = input().split()
     infos.append(info(a, int(b), int(c)))
 
