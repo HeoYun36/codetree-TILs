@@ -1,10 +1,13 @@
 n = int(input())
 
-digits = []
+digits = [0 for i in range(100)]
+idx = 0
 
 while n > 0:
-    digits.append(n % 2)
+    digits[idx] = n % 2
+    idx += 1
+
     n //= 2
 
-for i in digits[::-1]:
-    print(i, end="")
+for i in range(idx - 1, -1, -1):
+    print(digits[i], end="")
