@@ -10,3 +10,5 @@ elif s == 'C':
     print("Usually")
 elif s == 'D':
     print("Effort")
+else:
+    print("Failure")
