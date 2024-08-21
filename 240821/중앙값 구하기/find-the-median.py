@@ -1,12 +1,16 @@
 a, b, c = map(int, input().split())
 
-if a < b and b < c:
-    print(b)
-elif a > b and b > c:
-    print(b)
-elif a > b and a < c:
-    print(a)
-elif a > c and a < b:
-    print(a)
+if a > b:
+    if c > a:
+        print(a)
+    elif b > c:
+        print(b)
+    else:
+        print(c)
 else:
-    print(c)
+    if a > c:
+        print(a)
+    elif b < c:
+        print(b)
+    else:
+        print(c)
