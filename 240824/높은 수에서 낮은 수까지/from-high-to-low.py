@@ -7,5 +7,5 @@ else:
     num1 = b
     num2 = a
 
-for i in range(b, a - 1, -1):
+for i in range(num2, num1 - 1, -1):
     print(i, end=' ')
