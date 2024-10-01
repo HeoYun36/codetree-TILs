@@ -12,12 +12,12 @@ for _ in range(q):
         print(n_list[q_num[1] - 1])
     # 2 b
     elif q_num[0] == 2:
-        idx = 0
+        idx = -1
         for i in range(n):
             if n_list[i] == q_num[1]:
                 idx = i
                 break
-        if idx == 0:
+        if idx == -1:
             print(0)
         else:
             print(idx + 1)
