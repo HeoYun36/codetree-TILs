@@ -11,6 +11,8 @@ for i in range(n2):
 
 if idx_list == []:
     result = "No"
+elif len(idx_list) == 1:
+    result = "No"
 else:
     for i in range(len(idx_list) - 1):
         if idx_list[i] - idx_list[i + 1] >= 2 or idx_list[i + 1] - idx_list[i] >= 2:
