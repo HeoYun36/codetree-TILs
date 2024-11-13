@@ -6,7 +6,7 @@ for i in range(2):
     sum_of_row = 0
     for j in range(4):
         sum_of_row += arr[i][j]
-    print(sum_of_row / 4, end=' ')
+    print(f"{sum_of_row / 4:.1f}", end=' ')
 
 print()
 
@@ -15,7 +15,7 @@ for j in range(4):
     sum_of_col = 0
     for i in range(2):
         sum_of_col += arr[i][j]
-    print(sum_of_col / 2, end=' ')
+    print(f"{sum_of_col / 2:.1f}", end=' ')
 
 print()
 
@@ -24,4 +24,4 @@ sum_of_all = 0
 for i in range(2):
     for j in range(4):
         sum_of_all += arr[i][j]
-print(sum_of_all / 8)
+print(f"{sum_of_all / 8:.1f}")
