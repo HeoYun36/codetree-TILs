@@ -16,8 +16,8 @@ else:
             cnt = 1
         else:
             cnt += 1
-            if i == len(str_input) - 1:
-                result += str(cnt)
+        if i == len(str_input) - 1:
+            result += str(cnt)   
 
 print(len(result))
 print(result)
