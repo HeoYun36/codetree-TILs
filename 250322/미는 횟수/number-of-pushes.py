@@ -9,7 +9,7 @@ for i in range(len(str_A)):
     if str_A == str_B:
         break
 
-if cnt == 6:
+if cnt == len(str_A):
     print(-1)
 else:
     print(cnt)
