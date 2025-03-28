@@ -1,8 +1,11 @@
-a, b, c = map(int, input().split())
+n = int(input())
 
 # Please write your code here.
+def magic_f(n):
+    sum_of_num = n // 10 + n % 10 
+    return n % 2 == 0 and sum_of_num % 5 == 0
 
-def return_min(a, b, c):
-    return min([a, b, c])
-
-print(return_min(a, b, c))
+if magic_f:
+    print("Yes")
+else:
+    print("No")
