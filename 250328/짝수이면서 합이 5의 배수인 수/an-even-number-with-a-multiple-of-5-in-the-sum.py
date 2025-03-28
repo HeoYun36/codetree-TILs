@@ -3,9 +3,9 @@ n = int(input())
 # Please write your code here.
 def magic_f(n):
     sum_of_num = n // 10 + n % 10 
-    if n % 2 == 0 and sum_of_num % 5 == 0:
-        return "Yes"
-    else:
-        return "No"
+    return n % 2 == 0 and sum_of_num % 5 == 0
 
-print(magic_f(n))
+if magic_f(n):
+    print("Yes")
+else:
+    print("No")
