@@ -7,7 +7,7 @@ def magic_f(string):
         if string[i] != string[i + 1]:
             cnt += 1
     
-    return cnt >= 2
+    return cnt >= 1
 
 if magic_f(A):
     print("Yes")
