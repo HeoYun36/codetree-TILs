@@ -15,12 +15,12 @@ for _ in range(n):
         weather_data.append(Weather(date, day, inf))
 
 
-day = int(weather_data[0].date[:4])
+day = weather_data[0].date
 idx = 0
 
 for i in range(1, len(weather_data)):
-    if day > int(weather_data[i].date[:4]):
-        day = int(weather_data[i].date[:4])
+    if day > weather_data[i].date:
+        day = weather_data[i].date
         idx = i
 
 print(weather_data[idx].date, weather_data[idx].day, weather_data[idx].inf)
