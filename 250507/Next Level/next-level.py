@@ -9,7 +9,7 @@ id1.id, id1.level = tuple1
 
 id2 = Id()
 tuple2 = tuple(input().split())
-id2.id, id1.level = tuple2
+id2.id, id2.level = tuple2
 
 print(f"user {id1.id} lv {id1.level}")
 print(f"user {id2.id} lv {id2.level}")
