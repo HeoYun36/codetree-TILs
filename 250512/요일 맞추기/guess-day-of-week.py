@@ -30,7 +30,6 @@ def count_days(m1, d1, m2, d2):
 days_1 = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 days_2 = ["Mon", "Sun", "Sat", "Fri", "Thu", "Wed", "Tue"]
 
-print(count_days(m1, d1, m2, d2))
 if m1 < m2:
     print(days_1[count_days(m1, d1, m2, d2) % 7])
 elif m1 > m2:
