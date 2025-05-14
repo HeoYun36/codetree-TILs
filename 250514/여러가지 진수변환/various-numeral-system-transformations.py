@@ -4,11 +4,11 @@ digit = []
 
 while True:
     if n < b:
-        digit.apppend(n)
+        digit.append(n)
         break
 
     digit.append(n % b)
     n //= b
 
-for i in digit:
+for i in digit[::-1]:
     print(i, end='')
