@@ -14,8 +14,8 @@ for i in range(n):
             x -= 1
     else:
         while x:
-            slot[curr_state] += 1
             curr_state -= 1
+            slot[curr_state] += 1
 
             x -= 1
 
@@ -26,5 +26,3 @@ for i in range(len(slot)):
         length +=1
 
 print(length)
-
-
