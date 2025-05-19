@@ -11,7 +11,7 @@ for i in range(n):
         for i in range(state - x + 1, state + 1):
             slot[i] = 1
         
-        state -= (x + 1)
+        state -= (x - 1)
     else:
         for i in range(state, state + x):
             slot[i] = -1
