@@ -33,17 +33,20 @@ for i in range(2001):
             x_arr.append(i)
             y_arr.append(j)
 
-max_x2 = max(x_arr) + 1
-max_y2 = max(y_arr) + 1
+if x_arr == [] and y_arr == []:
+    print(0)
+else:
+    max_x2 = max(x_arr) + 1
+    max_y2 = max(y_arr) + 1
 
-min_x1 = min(x_arr)
-min_y1 = min(y_arr)
+    min_x1 = min(x_arr)
+    min_y1 = min(y_arr)
 
-area = 0
+    area = 0
 
-for i in range(min_x1, max_x2):
-    for j in range(min_y1, max_y2):
-        area += 1
+    for i in range(min_x1, max_x2):
+        for j in range(min_y1, max_y2):
+            area += 1
 
-print(area)
+    print(area)
 
