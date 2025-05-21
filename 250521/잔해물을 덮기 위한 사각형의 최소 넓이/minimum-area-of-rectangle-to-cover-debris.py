@@ -4,6 +4,16 @@ b_x1, b_y1, b_x2, b_y2 = map(int ,input().split())
 
 offset = 1000
 
+a_x1 += offset
+a_y1 += offset
+a_x2 += offset
+a_y2 += offset
+
+b_x1 += offset
+b_y1 += offset
+b_x2 += offset
+b_y2 += offset
+
 arr_2d = [[0 for _ in range(2001)] for _ in range(2001)]
 
 for i in range(a_x1, a_x2):
