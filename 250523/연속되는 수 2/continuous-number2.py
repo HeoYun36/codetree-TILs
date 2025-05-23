@@ -6,10 +6,18 @@ for _ in range(n):
     num = int(input())
     num_list.append(num)
 
-cnt = 0
+cnt = 1
 
-for i in range(n):
-    if i == 0 or num_list[i] != num_list[i - 1]:
+arr = []
+
+for i in range(1, n):
+    if num_list[i] != num_list[i - 1]:
+        arr.append(cnt)
+        cnt = 1
+    else:
         cnt += 1
 
-print(cnt)
+    if i == n - 1:
+        arr.append(cnt)
+
+print(max(arr))
