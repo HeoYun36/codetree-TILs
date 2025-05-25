@@ -42,7 +42,6 @@ for _ in range(m):
 
     # 주어진 시간만큼 이동하면서 리스트에 위치 기록
     while t != 0:
-        idx += 1
         state += move
         b.append(state)
 
