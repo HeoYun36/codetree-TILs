@@ -26,7 +26,6 @@ for _ in range(n):
         t -= 1
 
 # B
-idx = 0
 state = 0
 
 for _ in range(m):
