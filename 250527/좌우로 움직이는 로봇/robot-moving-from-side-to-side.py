@@ -25,25 +25,19 @@ def move(arr, k):
 move(a_arr, n)
 move(b_arr, m)
 
-length = max(len(a_arr), len(b_arr))
+if len(a_arr) >= len(b_arr):
+    length = len(a_arr)
+    for _ in range(len(a_arr) - len(b_arr)):
+        b_arr.append(b_arr[-1])
+else:
+    length = len(b_arr)
+    for _ in range(len(b_arr) - len(a_arr)):
+        a_arr.append(a_arr[-1])
 
 cnt = 0
-t = 1
 
-while t < length: 
-    a_idx = t
-    b_idx = t
-
-    if t >= len(a_arr):
-        a_idx = len(a_arr) - 1
-    
-    if t >= len(b_arr):
-        b_idx = len(b_arr) - 1
-
-    if (a_arr[a_idx - 1] != b_arr[b_idx - 1]) and (a_arr[a_idx] == b_arr[b_idx]):
+for i in range(1, length):
+    if a_arr[i - 1] != b_arr[i - 1] and a_arr[i] == b_arr[i]:
         cnt += 1
-    
-    t += 1
 
 print(cnt)
-
